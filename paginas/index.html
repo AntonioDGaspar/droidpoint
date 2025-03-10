@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title> DroidPoint </title>
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @font-face {
+            font-family: IDroid;
+            src: url("fontes/idroid.otf") format("opentype");
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /* Variáveis */
+        :root{
+            --cor1: #5cebd6;
+            --cor2: #83e1ad;
+            --cor3: #3ddc84;
+            --cor4: #2fa866;
+            --cor5: #1a5c37;
+            --cor6: #063d1e;
+
+            --font-padrao: Arial, helvetica, sans-serif;
+            --font-destaque: "Bebas Neus", sans-serif;
+            --font-android: "IDroid", sans-serif;
+        }
+
+        body{
+            background-color: var(--cor2);
+            font-family: var(--font-destaque);
+            color: var(--cor6);
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, var(--cor4), var(--cor5), var(--cor6));
+            text-align: center;
+        }
+
+        .titulo_principal{
+            font-family: var(--font-destaque);
+            padding: 20px;
+            font-weight: normal;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+        }
+
+        p#texto_header{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.623);
+            padding-bottom: 10px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+        }
+
+        nav{
+            box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.199);
+            font-size: 1.3em;
+        }
+
+        nav > ul{
+            display: flex;
+            padding: 10px;
+            margin-right: 20px;
+            justify-content: left;
+            list-style: none;
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        nav a:hover{
+            background-color: var(--cor4);
+            max-width: 150px;
+        }
+
+        nav a{
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition-duration: 0.5s;
+        }
+
+        main{
+            padding: 10px;
+            text-align: center;
+        }
+
+        section{
+            margin: 50px;
+        }
+
+        section > p{
+            padding: 10px;
+        }
+
+        #banner{
+            margin: -10px -10px 0 -10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to left, var(--cor2), var(--cor3));
+        }
+
+        #banner > p{
+            width: 500px;
+            line-height: 2;
+            color: var(--cor6);
+        }
+
+        div{
+            display: inline-block;
+            background-color: white;
+            width: 450px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 9px 4px var(--cor4);
+            margin: 5px;
+            transition-duration: 0.5s;
+        }
+
+        img.artigos:hover{
+            width: 450px;
+            max-width: 1000px;
+            height: 300px;
+            transition-duration: 0.5s;
+        }
+
+        div > p{
+            color: var(--cor5);
+            font-weight: bold;
+            margin: 5px;
+            display: inline;
+        }
+
+        img.artigos{
+            width: 450px;
+            height: 250px;
+        }
+
+        section#empresa_inf{
+            display: flex;
+            justify-content: center;
+        }
+
+        h2{
+            font-family: var(--font-android);
+        }
+
+        h2#quem_somos{
+            text-decoration: underline;
+        }   
+
+        section#empresa_inf > p{
+            display: inline-block;
+            background-color: white;
+            order: 2;
+        }
+
+        div#logo{
+            background-image: url("../imagens/GASPAR\ PRODUÇÕES\ LOGO.png");
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            text-align: left;
+        }
+
+        div#logo:hover{
+            width: 550px;
+            height: 350px;
+        }
+
+        section#empresa_inf > div{
+            text-align: left;
+            padding: 10px;
+        }
+
+        section#empresa_inf a{
+            text-decoration: none;
+            color: var(--cor5);
+        }
+
+        section#empresa_inf li{
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+
+        footer{
+            background-color: #063d1e;
+            color: white;
+            padding: 10px 0 10px 0;
+            margin-top: 20px;
+            text-align: center;   
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo_principal"> DROID POINT </h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Home </a></li> 
+                <li> <a href="#noticias"> Notícias </a></li> 
+                <li> <a href="#curiosidades"> Curiosidades </a></li> 
+                <li> <a href="sobre_nos.html"> Fale Connosco </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <p id="txt_banner"> O Android está em constante evolução, trazendo inovações, curiosidades e mudanças que moldam o futuro da tecnologia móvel. O DroidPoint nasce para ser seu guia nesse universo, reunindo notícias, curiosidades e informações essenciais sobre o sistema operacional mais usado do mundo. Quer saber sobre as últimas atualizações, segredos escondidos ou a história por trás das versões do Android? Aqui é o lugar certo! </p>
+            <img src="../imagens/bugdroid.png" alt="BugDroid" id="img_banner" id="img_banner">
+        </section>
+        <section id="noticias">
+            <h2> NOTÍCIAS ACTUALIZADAS </h2>
+            <p> Esteja por dentro das Principais Notícias relacionadas ao Sitema Android </p>
+            <a href="noticia01.html">
+                <div>
+                    <img src="../imagens/android06.jpg" alt="" class="artigos">
+                    <p> Lançamento do Android 16 </p>
+                </div>
+            </a>
+            <a href="noticia02.html">
+                <div>
+                    <img src="../imagens/fuchsia-os.jpg" alt="" class="artigos">
+                    <p> Fuchsia OS: O Substituto do Android? </p>
+                </div>
+            </a>
+        </section>
+        <section id="curiosidades">
+            <h2>  CURIOSIDADES </h2>
+            <p> Descubra os Factos mais Interessantes e as Melhores Curiosidades </p>
+            <a href="Cursiosidade01.html">
+                <div>
+                    <img src="../imagens/Android03.jpg" alt="" class="artigos">
+                    <p> Descubra sobre a criação do famoso mascote do Android </p>
+                </div>
+            </a>
+            <a href="curiosidade02.html">
+                <div>
+                    <img src="../imagens/android.jpg" alt="" class="artigos">
+                    <p> Conheça a origem do famoso nome Android. </p>
+                </div>
+            </a>
+            <a href="curiosidade03.html">
+                <div>
+                    <img src="../imagens/android05.jpg" alt="" class="artigos">
+                    <p> Explore a evolução das interfaces do Android </p>
+                </div>
+            </a>
+        </section>
+        <section id="sobre_nos">
+            <h2 id="quem_somos"> QUEM SOMOS? </h2>
+            <section id="empresa_inf">
+                <a href="curiosidade01.html">
+                    <div id="logo"></div>
+                </a>
+                <div>
+                    <h3> Contactos </h3>
+                    <ul style="list-style-position: inside;">
+                        <li> <a href=""> Gaspar Produções &#x1F1EB; </a> </li> <br>
+                        <li> <a href=""> gasparproduções@gmail.com</a> </li> <br>
+                        <li> <a href="">@gasparproduções</a> </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer> &copy; 2025 Gaspar Produções – Todos os direitos reservados. </footer>
+</body>
+</html>
