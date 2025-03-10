@@ -1,2 +1,0 @@
-# droidpoint
- Projecto DroidPoint
