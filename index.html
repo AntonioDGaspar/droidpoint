@@ -15,11 +15,6 @@
         }
 
         *{
-            margin: 0;
-            padding: 0;
-        }
-
-        *{
             padding: 0px;
             margin: 0px;
         }
@@ -67,7 +62,6 @@
 
         nav{
             box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.199);
-            font-size: 1.3em;
         }
 
         nav > ul{
@@ -95,6 +89,8 @@
         main{
             padding: 10px;
             text-align: center;
+
+            min-width: 100px;
         }
 
         section{
@@ -102,22 +98,29 @@
         }
 
         section > p{
-            padding: 10px;
+            padding: 25px;
         }
 
         #banner{
-            margin: -10px -10px 0 -10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            margin: -10px -10px 0 -25px;
+            display: inline-block;
+            text-align: center;
+            
             background-image: linear-gradient(to left, var(--cor2), var(--cor3));
+            width: 100%;
         }
 
         #banner > p{
-            width: 500px;
-            line-height: 2;
+            display: inline-block;
+            min-width: 400px;
+            max-width: 500px;
+            line-height: 2.5;
             color: var(--cor6);
+        }
+
+        #banner > img{
+            min-width: 50px;
+            max-width: 500px;
         }
 
         div{
@@ -127,12 +130,14 @@
             height: 300px;
             border-radius: 10px;
             box-shadow: 0px 1px 9px 4px var(--cor4);
-            margin: 5px;
+            margin: 20px;
             transition-duration: 0.5s;
+            min-width: 350px;
+            max-width: 350px;
         }
 
         img.artigos:hover{
-            width: 450px;
+            width: 350px;
             max-width: 1000px;
             height: 300px;
             transition-duration: 0.5s;
@@ -146,17 +151,21 @@
         }
 
         img.artigos{
-            width: 450px;
+            max-width: 350px;
+            min-width: 350px;
             height: 250px;
         }
 
         section#empresa_inf{
-            display: flex;
-            justify-content: center;
+            margin: auto;
+            display: block;
         }
 
         h2{
             font-family: var(--font-android);
+            margin: 20px;
+            background-image: linear-gradient(to right, var(--cor3), var(--cor4));
+            width: 95%;
         }
 
         h2#quem_somos{
@@ -168,23 +177,28 @@
             background-color: white;
             order: 2;
         }
+        
+        div#contactos{
+            width: 330px;
+        }
 
         div#logo{
             background-image: url("imagens/GASPAR\ PRODUÇÕES\ LOGO.png");
             background-size: cover;
             background-position: center;
-            border-radius: 50px;
             text-align: left;
+            height: 200px;
         }
 
         div#logo:hover{
-            width: 550px;
+            width: 700px;
             height: 350px;
         }
 
         section#empresa_inf > div{
             text-align: left;
             padding: 10px;
+            min-width: 250px;
         }
 
         section#empresa_inf a{
@@ -194,7 +208,7 @@
 
         section#empresa_inf li{
             margin-top: 50px;
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
 
         footer{
@@ -205,7 +219,6 @@
             text-align: center;   
             width: 100%;
         }
-
     </style>
 </head>
 <body>
@@ -216,7 +229,7 @@
                 <li> <a href="index.html"> Home </a></li> 
                 <li> <a href="#noticias"> Notícias </a></li> 
                 <li> <a href="#curiosidades"> Curiosidades </a></li> 
-                <li> <a href="paginas/sobre_nos.html"> Fale Connosco </a></li>
+                <li> <a href="sobre_nos.html"> Fale Connosco </a></li>
             </ul>
         </nav>
     </header>
@@ -228,13 +241,13 @@
         <section id="noticias">
             <h2> NOTÍCIAS ACTUALIZADAS </h2>
             <p> Esteja por dentro das Principais Notícias relacionadas ao Sitema Android </p>
-            <a href="paginas/noticia01.html">
+            <a href="noticia01.html">
                 <div>
                     <img src="imagens/android06.jpg" alt="" class="artigos">
                     <p> Lançamento do Android 16 </p>
                 </div>
             </a>
-            <a href="paginas/noticia02.html">
+            <a href="noticia02.html">
                 <div>
                     <img src="imagens/fuchsia-os.jpg" alt="" class="artigos">
                     <p> Fuchsia OS: O Substituto do Android? </p>
@@ -244,19 +257,19 @@
         <section id="curiosidades">
             <h2>  CURIOSIDADES </h2>
             <p> Descubra os Factos mais Interessantes e as Melhores Curiosidades </p>
-            <a href="/paginas/Cursiosidade01.html">
+            <a href="Cursiosidade01.html">
                 <div>
                     <img src="imagens/Android03.jpg" alt="" class="artigos">
                     <p> Descubra sobre a criação do famoso mascote do Android </p>
                 </div>
             </a>
-            <a href="paginas/curiosidade02.html">
+            <a href="curiosidade02.html">
                 <div>
                     <img src="imagens/android.jpg" alt="" class="artigos">
                     <p> Conheça a origem do famoso nome Android. </p>
                 </div>
             </a>
-            <a href="paginas/curiosidade03.html">
+            <a href="curiosidade03.html">
                 <div>
                     <img src="imagens/android05.jpg" alt="" class="artigos">
                     <p> Explore a evolução das interfaces do Android </p>
@@ -266,10 +279,10 @@
         <section id="sobre_nos">
             <h2 id="quem_somos"> QUEM SOMOS? </h2>
             <section id="empresa_inf">
-                <a href="curiosidade01.html">
+                <a href="sobre_nos.html">
                     <div id="logo"></div>
                 </a>
-                <div>
+                <div id="contactos">
                     <h3> Contactos </h3>
                     <ul style="list-style-position: inside;">
                         <li> <a href=""> Gaspar Produções &#x1F1EB; </a> </li> <br>
